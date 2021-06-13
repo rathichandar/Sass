@@ -1,0 +1,73 @@
+.menu-btn{
+    position: absolute;
+    z-index: 1;
+    right: 1rem;
+    top: 1rem;
+    height: 20px;
+    width: 28px;
+    cursor: pointer;
+    @include transition;
+
+    &_burger{
+        position: absolute;
+        right: 0;
+        top: 0.5rem;
+        width: 28px;
+        height: 3px;
+        background: set-color-text($primary-color);
+        :hover{
+            color:orangered;
+        }
+
+        &::before{
+            content: '';
+            position: absolute;
+            top: -8px;
+            width: 28px;
+            height: 3px;
+            background: set-color-text($primary-color);
+            @include transition;
+        }
+
+        &::after{
+            content: '';
+            position: absolute;
+            top: 8px;
+            width: 20px;
+            height: 3px;
+            background: set-color-text($primary-color);
+            @include transition;
+        }
+        &.open{
+           transform: rotate(720deg);
+            background: transparent;
+
+          &::before{
+              transform: rotate(45deg) translate(5px,8px);
+              
+          }  
+          &::after{
+              transform: rotate(-45deg) translate(3px,-7px);
+          }
+        }
+    }
+}
+
+.nav{
+    display: inline-flexbox;
+    
+    
+
+    
+    top: 0;
+    left: 0;
+    width: 100vh;
+    opacity: 0.98;
+
+    &.open{
+        visibility: visible;
+    }
+    &:hover{
+        color: orange;
+    }
+}

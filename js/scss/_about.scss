@@ -1,0 +1,51 @@
+.about{
+    height: 100;
+    padding: 40vh;
+    border: white;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+    border-top: yellow;
+  
+ 
+    background: linear-gradient(
+        to right
+        rgba($primary-color,0.9),
+        rgba($primary-color,0.3)
+    ), 
+ 
+    url(/scss/1449676.jpg)  left ;
+
+background-size: cover;
+position: relative;
+
+&_name{
+text-align: left;
+position:relative;
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:white;
+
+&--last{
+    font-family: 'Times New Roman', Times, serif;
+    color:red;
+    text-align-last: left;
+    
+}
+
+}
+
+.images{
+    background: url(./wp4269833.jpg) center top;
+    background-size: cover;
+    padding-bottom: 10px;
+    border-bottom: yellow;
+    
+}
+
+
+}
+.aston{
+    text-align: left center;
+
+}
